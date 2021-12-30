@@ -3,6 +3,8 @@ import './App.css';
 import CharacterList from './pages/characterList';
 import { Routes, Route, Link } from "react-router-dom";
 import Character from './pages/Character';
+import Search from './pages/Search';
+import Mutation from './pages/Mutation';
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,8 @@ function App() {
       </header> */}
        <Routes>
         <Route path="/" element={ <CharacterList/>} />
+        <Route path="/search" element={<Search/>}/>
+        <Route path="/mutation" element={<Mutation/>}/>
         <Route path="/:id" element={ <Character/>} />
       </Routes>
      
